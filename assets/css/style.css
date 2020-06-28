@@ -20,7 +20,7 @@
     1 - Header
 ------------------------------------*/
 header {
-  background-color: rgba(240, 144, 0, 0.53);
+  background-color: rgba(240, 136, 0, 0.883);
   position: sticky;
   color: rgba(201, 192, 192, 0.863);
   z-index: 1000;
@@ -485,10 +485,11 @@ form button.btn-primary:hover {
 ------------------------------------*/
 .trust {
   padding: 75px 0;
-  background-color: #26264b;
+  background-color: #232f4e;
   color: #ddd;
   position: relative;
 }
+
 
 .trust .title {
   margin-bottom: 46px;
@@ -791,7 +792,7 @@ footer {
 }
 
 .contact-widget a {
-  color: #aaa;
+  color: rgb(255, 249, 249);
 }
 
 .contact-widget i {
@@ -800,7 +801,7 @@ footer {
 
 .twitter-widget i,
 .twitter-widget h6 {
-  color: #777;
+  color: rgb(255, 254, 254);
 }
 
 span {
