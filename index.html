@@ -25,12 +25,55 @@
     <!-- Responsive Stylesheet -->
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+<style>
+    #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: orange; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+</style>
+
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
     <!-- Loader Start -->
     <div class="css-loader">
         <div class="loader-inner line-scale d-flex align-items-center justify-content-center"></div>
     </div>
+    <script>//Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }</script>
     <!-- Loader End -->
     <!-- Header Start -->
  
@@ -45,7 +88,7 @@
                
             </div>
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/4.png" alt="Multipurpose" style="width: 150px;heighto: 150px;"></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/4.png" alt="Logo" style="width: 180px; height: 50px;"></a>
                 <div class="contact">&NonBreakingSpace;
                    &nbsp; <a href="tel:+1234567890" class="tel"><i class="fa fa-phone" aria-hidden="true"></i>+1234567890</a>
                     <a href="mailto:shramik.co@gmail.com"><i class="fa fa-envelope"
@@ -58,10 +101,10 @@
                 <a class="search-icon d-none d-md-block" href="#">
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Aboutus">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Contactus">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><strong>Home</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Aboutus"><strong>About Us</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services"><strong>Services</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contactus"><strong>Contact Us</strong></a></li>
                     </ul>
                   
                 </div>
@@ -113,33 +156,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="media" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
-                            <img class="mr-4" src="assets/images/service1.png" alt="Web Development">
-                            <div class="media-body">
-                                <h5>Web Development</h5>
-                                Donec volutpat tincidunt neque, vitae lobortis libero mattis sed tempus.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="media" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
-                            <img class="mr-4" src="assets/images/service2.png" alt="Web Development">
-                            <div class="media-body">
-                                <h5>Testing for perfection</h5>
-                                Donec volutpat tincidunt neque, vitae lobortis libero mattis sed tempus.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="media" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
-                            <img class="mr-4" src="assets/images/service3.png" alt="Web Development">
-                            <div class="media-body">
-                                <h5>Discussion of the idea</h5>
-                                Donec volutpat tincidunt neque, vitae lobortis libero mattis sed tempus.
-                            </div>
-                        </div>
-                    </div>
+            
                     <div class="col-sm-6 col-lg-4">
                         <div class="media" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
                             <img class="mr-4" src="assets/images/service4.png" alt="Web Development">
@@ -151,7 +168,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-4">
                         <div class="media" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
-                            <img class="mr-4" src="assets/images/service1.png" alt="Web Development">
+                            <img class="mr-4" src="assets/images/service3.png" alt="Web Development">
                             <div class="media-body">
                                 <h5> To eliminate employment of all forms of child labour.</h5>
                                 To achieve this vision, the Labour Department has formulated and publish the as published the policies like Transparent Inspection, Self Certification and Third Party Certification. 
@@ -162,8 +179,8 @@
                         <div class="media" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
                             <img class="mr-4" src="assets/images/service1.png" alt="Web Development">
                             <div class="media-body">
-                                <h5> To eliminate employment of all forms of child labour.</h5>
-                                To achieve this vision, the Labour Department has formulated and publish the as published the policies like Transparent Inspection, Self Certification and Third Party Certification. 
+                                <h5>To implement labour laws for statutory working </h5>
+                                To work towards creating an atmosphere wherein both workers and management perform their legally laid down roles, which will, in turn, contribute to the economic growth of the Nation.
                             </div>
                         </div>
                     </div>
@@ -403,12 +420,12 @@
                     <div class="col-md-6 col-xl-3">
                         <div class="single-widget tags-widget" data-aos="fade-up" data-aos-delay="800">
                             <h6 class="widget-tiltle">Popular Tags</h6>
-                            <a href="#">Amazing</a>
-                            <a href="#">Design</a>
-                            <a href="#">Photoshop</a>
-                            <a href="#">Art</a>
-                            <a href="#">Wordpress</a>
-                            <a href="#">jQuery</a>
+                            <a href="#">Logistics</a>
+                            <a href="#">Construction</a>
+                            <a href="#">Manufacturing</a>
+                            <a href="#">Agriculture</a>
+                            <a href="#">Automotiation</a>
+                        
                         </div>
                         <div class="single-widget subscribe-widget" data-aos="fade-up" data-aos-delay="800">
                             <h6 class="widget-tiltle">Subscribe us</h6>
@@ -428,7 +445,7 @@
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/shramik-co-8970321ab/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                             </ul>
                         </div>
                     </div>
