@@ -1,370 +1,478 @@
 <!doctype html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LkIndia</title>
-    <link rel="icon" href="img/logo.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/all.css">
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="css/slick.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- aos CSS -->
-    <link rel="stylesheet" href="css/aos/aos.css">
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>Shramik</title>
+    <!-- Stylesheets & Fonts -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700"
+        rel="stylesheet">
+    <!-- Plugins Stylesheets -->
+    <link rel="stylesheet" href="assets/css/loader/loaders.css">
+    <link rel="stylesheet" href="assets/css/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/swiper/swiper.css">
+    <link rel="stylesheet" href="assets/css/lightgallery.min.css">
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+<style>
+    #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: orange; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+</style>
+
 
 <body>
-    <!--::header part start::-->
-    <header class="main_menu home_menu">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+    <!-- Loader Start -->
+    <div class="css-loader">
+        <div class="loader-inner line-scale d-flex align-items-center justify-content-center"></div>
+    </div>
+    <script>//Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }</script>
+    <!-- Loader End -->
+    <!-- Header Start -->
+ 
+        
+
+      <header class="position-absolute w-100">
         <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo" style="width: 110px;height: 110px;"> </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="menu_icon"><i class="fas fa-bars"></i></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html"><strong>Home</strong></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html"><strong>About</strong></a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <strong>Our Collection</strong>
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                        <a class="dropdown-item" href="product_list.html"> Top Prodcutss</a>
-                                        <a class="dropdown-item" href="single-product.html">product details</a>
-                                        
-                                    </div>
-                                </li><!--
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_3"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        pages
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                        <a class="dropdown-item" href="login.html"> 
-                                            login
-                                            
-                                        </a>
-                                        <a class="dropdown-item" href="checkout.html">product checkout</a>
-                                        <a class="dropdown-item" href="cart.html">shopping cart</a>
-                                        <a class="dropdown-item" href="confirmation.html">confirmation</a>
-                                        <a class="dropdown-item" href="elements.html">elements</a>
-                                    </div>
-                                </li>
-                                -->
-                                
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html"><strong>Contact Us</strong></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="hearer_icon d-flex align-items-center">
-                            <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
-                           
-                        </div>
-                    </nav>
+            <div class="top-header d-none d-sm-flex justify-content-between align-items-center">
+                <div class="contact">
+                    
                 </div>
+               
             </div>
-        </div>
-        <div class="search_input" id="search_input_box">
-            <div class="container ">
-                <form class="d-flex justify-content-between search-inner">
-                    <input type="text" class="form-control" id="search_input" placeholder="Search Here">
-                    <button type="submit" class="btn"></button>
-                    <span class="ti-close" id="close_search" title="Close Search"></span>
-                </form>
-            </div>
-        </div>
-    </header>
-    <!-- Header part end-->
-
-    <!-- banner part start-->
-    <section class="banner_part">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5">
-                    <div class="banner_text">
-                        <div class="banner_text_iner">
-                            <h1>Best quality
-                                Products</h1>
-                            <p>Seamlessly empower fully researched 
-                                growth strategies and interoperable internal</p>
-                            <a href="product_list.html" class="btn_1">See More</a>
-                        </div>
-                    </div>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/4.png" alt="Logo" style="width: 180px; height: 50px;"></a>
+                <div class="contact">&NonBreakingSpace;
+                   &nbsp; <a href="tel:+1234567890" class="tel"><i class="fa fa-phone" aria-hidden="true"></i>+1234567890</a>
+                    <a href="mailto:shramik.co@gmail.com"><i class="fa fa-envelope"
+                            aria-hidden="true"></i>Shramik.co@gmail.com</a>
                 </div>
-            </div>
+                <div class="group d-flex align-items-center">
+                    
+                  
+                </div>
+                <a class="search-icon d-none d-md-block" href="#">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#"><strong>Home</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Aboutus"><strong>About Us</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Services"><strong>Services</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contactus"><strong>Contact Us</strong></a></li>
+                    </ul>
+                  
+                </div>
+            </nav>
         </div>
-        <div class="banner_img">
-            <img src="img/pic1.jpeg" alt="#" class="img-fluid">
-            <img src="img/banner_pattern.png " alt="#" class="pattern_img img-fluid">
-        </div>
-    </section>
-    <!-- banner part start-->
-
-    <!-- product list start-->
-    <section class="single_product_list">
+    </header> 
+    <!-- Hero Start -->
+    <section class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="single_product_iner">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_img">
-                                    <img src="img/feature_2.png" class="img-fluid" alt="#">
-                                    <img src="img/product_overlay.png" alt="#" class="product_overlay img-fluid">
+                <div class="col-12 offset-md-1 col-md-11">
+                    <div class="swiper-container hero">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-content d-flex align-items-center">
+                                <div class="single-slide">
+                                    <h1
+                                    data-aos="fade-right" data-aos-delay="200"><br> Shramik
+                                    </h1>
+                                    <p data-aos="fade-right" data-aos-delay="600">Presenting India’s very first online labour recruitment & management platform: shramik.co The one-stop solution for all your labour & labour-related problems. We make sure that our organized and well-trained labour force is class apart to help you increase productivity to the maximum and drive your business to new possibilities.
+                                    </p>
+                                    <a data-aos="fade-right" data-aos-delay="900" href="#Aboutus" class="btn btn-primary">See
+                                        More</a>
+                                   
                                 </div>
                             </div>
-                            <div class="col-lg-5 col-sm-6">
-                                <div class="single_product_content">
-                                    <h5>Started from very good range</h5>
-                                    <h2> <a href="single-product.html">Uniquely Catering to your every need.</a> </h2>
-                                    <a href="product_list.html" class="btn_3">Explore Now</a>
-                                </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Add Control
+            <span class="arr-left"><i class="fa fa-angle-left"></i></span>
+            <span class="arr-right"><i class="fa fa-angle-right"></i></span>
+        </div>
+        <div class="texture"></div>
+        <div class="diag-bg"></div> -->
+    </section>
+    <!-- Hero End -->
+    <!-- Call To Action Start -->
+   
+    <!-- Call To Action End -->
+    <!-- Services Start -->
+    <section class="services">
+        <div class="container">
+            <div class="title text-center">
+                <h6>Our Speakers</h6>
+                <h1 class="title-blue">Why Choose Us</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+            
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="media" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
+                            <img class="mr-4" src="assets/images/service4.png" alt="Web Development">
+                            <div class="media-body">
+                                <h5> To maintain and foster industrial peace and harmony.</h5>
+                                The Labour Department understands the needs of transparency and to minimize, wherever possible, to eliminate the discretionary powers of the officers in implementation of the Labour Laws 
                             </div>
                         </div>
                     </div>
-                    <div class="single_product_iner">
-                        <div class="row align-items-center justify-content-between">
-                            <div class="col-lg-6 col-sm-6">
-                                <div class="single_product_img">
-                                    <img src="img/single_product_1.png" class="img-fluid" alt="#">
-                                    <img src="img/product_overlay.png" alt="#" class="product_overlay img-fluid">
-                                </div>
-                            </div>
-                            <div class="col-lg-5 col-sm-6">
-                                <div class="single_product_content">
-                                    <h5>Crafted for the desginer inside you</h5>
-                                    <h2> <a href="single-product.html">Corporate dedication to the partnership and commitment to business ethics</a> </h2>
-                                    <a href="product_list.html" class="btn_3">Explore Now</a>
-                                </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="media" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
+                            <img class="mr-4" src="assets/images/service3.png" alt="Web Development">
+                            <div class="media-body">
+                                <h5> To eliminate employment of all forms of child labour.</h5>
+                                To achieve this vision, the Labour Department has formulated and publish the as published the policies like Transparent Inspection, Self Certification and Third Party Certification. 
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="media" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
+                            <img class="mr-4" src="assets/images/service1.png" alt="Web Development">
+                            <div class="media-body">
+                                <h5>To implement labour laws for statutory working </h5>
+                                To work towards creating an atmosphere wherein both workers and management perform their legally laid down roles, which will, in turn, contribute to the economic growth of the Nation.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- product list end-->
-    
-        
-        
-
-    
-    <!-- client review part here -->
-    <section class="client_review">
+    <!-- Services End -->
+    <!-- Featured Start -->
+    <section class="featured" id="Aboutus">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <marquee><p><strong>L.k Enterprise since 2017</strong></p></marquee><br>
-                    
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
+                    <div class="title">
+                        <h4 class="text-org">About Shramik</h4>
+                        <h2 class="title-blue">Find the well trained and specific labour for your Bussiness .</h2 >
                     </div>
+                    <p><b><u>shramik.co </u></b>is an initiative post-coronavirus-labour-crisis in India. Indian labour, factory owners, contractors and also the government faced huge obstacles with labour-related problems due to lack of a system and unorganized labour industry. shramik.co aims to organize the Indian labour industry (unskilled and semiskilled) by bringing in major reforms in terms of efficiency, productivity and insurances.</p>
+                    <div class="media-element d-flex justify-content-between">
+                        <div class="media">
+                            <i class="fa fa-magic mr-4"></i>
+                            <div class="media-body">
+                                <h5>Repowering Indian Labour</h5>
+                                By Providing organization
+                            </div>
+                        </div>
+                        <div class="media">
+                            <i class="fa fa-magic mr-4"></i>
+                            <div class="media-body">
+                                <h5>Repowering Industries</h5>
+                                By Increasing efficiency
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                    </section>
-    =<!-- client review part end -->
-
-
-    <!-- feature part here -->
-    <section class="feature_part section_padding">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-6">
-                    <div class="feature_part_tittle">
-                        <h4><strong>
-                            
-                            
-                         The basic principles constitute the core of the LK. To provide value and service to our customers by offering quality merchandise, corporate dedication to the partnership and commitment to business ethics. We lead with a vision, which is dynamically matched with these three basic principles. 
-                        </strong></h4>
-                        <br><blockquote class="generic-blockquote">
-                        <h4><p>
-                            To serve the customers better, we started LK in 2017 in manesar, Gurgaon.
-                            
-                            The directors are ushering the group into a new level of excellence, and we visualize a better world for everyone. LK  is committed to contribute into the development of the nation by generating more and more revenues through its ambitious ventures.</p></blockquote>
-  </h4>
-  <br>
-  <a href="about.html" class="btn_1">See More</a>
-                                          </div>
-                                          
+                    <a href="ourstory.html" class="btn btn-primary">Our Story</a>
                 </div>
-                
-                <div class="col-lg-5">
-                    <div class="feature_part_content">
-                        <img src="img/author/about1.jpeg" alt="#" class="img-fluid" >
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
+                    <div class="featured-img">
+                        <img class="featured-big" src="assets/images/labour3.jpg" alt="Featured 1" style="height: 350px;width: 190;">
+                        <img class="featured-small" src="assets/images/labour2.jpg" alt="Featured 2" style="height: 230px;width: 230px;">
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_feature_part">
-                        <img src="img/icon/feature_icon_1.svg" alt="#">
-                        <h4>Credit Card Support</h4>
+        </div>
+    </section>
+    <!-- Featured End -->
+   
+  <marquee><h4><strong>Services :</strong>
+      Sales -
+    Agriculture - 
+    Construction - 
+    Food & Drink - 
+    Housebuilding - 
+    Industrial - 
+    Manufacturing / Production Security -
+    Automotive - 
+    Driving -
+    Logistics</marquee></h4>
+     
+    <!-- Recent Posts End -->
+    <!-- Pricing Start -->
+    <section class="pricing-table" id="Services">
+        <div class="container">
+            <div class="title text-center">
+                <h6 class="title-primary">Our</h6>
+                <h1 class="title-blue">Services</h1>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <div class="single-pricing text-center" data-aos="fade-up" data-aos-delay="0"
+                        data-aos-duration="600">
+                        <span>Monthly</span>
+                        <h2>Category B</h2>
+                        <p class="desc">Here goes some description</p>
+                        <p class="price">50</p>
+                        <p>Shramiks the unskilled labour</p>
+                        <a href="#" class="btn btn-primary">Hire Now</a>
+                        <svg viewBox="0 0 170 193">
+                            <path fill-rule="evenodd" fill="rgb(238, 21, 21)"
+                                d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
+                        </svg>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_feature_part">
-                        <img src="img/icon/feature_icon_2.svg" alt="#">
-                        <h4>Online Order</h4>
+                <div class="col-md-4">
+                    <div class="single-pricing text-center" data-aos="fade-up" data-aos-delay="300"
+                        data-aos-duration="600">
+                        <span>Monthly</span>
+                        <h2>Category A</h2>
+                        <p class="desc">Here goes some description</p>
+                        <p class="price">50</p>
+                        <p></p>
+                        <p></p>
+                        <p>Shramik</p>
+                        <p>100 </p>
+                        <a href="#" class="btn btn-primary">Hire Now</a>
+                        <svg viewBox="0 0 170 193">
+                            <path fill-rule="evenodd" fill="rgb(238, 21, 21)"
+                                d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
+                        </svg>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_feature_part">
-                        <img src="img/icon/feature_icon_3.svg" alt="#">
-                        <h4>Free Delivery</h4>
+                <div class="col-md-4">
+                    <div class="single-pricing text-center" data-aos="fade-up" data-aos-delay="600"
+                        data-aos-duration="600">
+                        <span>Monthly</span>
+                        <h2>Category C</h2>
+                        <p class="desc">Here goes some description</p>
+                        <p class="price">50</p>
+                        <p>Create excepteur sint occaecat cupidatat non proident</p>
+                        <a href="#" class="btn btn-primary">Hire Now</a>
+                        <svg viewBox="0 0 170 193">
+                            <path fill-rule="evenodd" fill="rgb(238, 21, 21)"
+                                d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
+                        </svg>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_feature_part">
-                        <img src="img/icon/feature_icon_4.svg" alt="#">
-                        <h4>Product with Gift</h4>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing End -->
+    <!-- Testimonial and Clients Start -->
+    <!-- Call To Action 2 End -->
+    <!-- Footer Start -->
+    <footer>
+        <!-- Widgets Start -->
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xl-4">
+                        <div id="map" style="height: 280px; width: 300px;"></div>
+                        <script>
+                          function initMap() {
+                            var uluru = {
+                              lat: 28.3515,
+                              lng:  76.9428
+                            };
+                            var grayStyles = [{
+                                featureType: "all",
+                                stylers: [{
+                                    saturation: -90
+                                  },
+                                  {
+                                    lightness: 50
+                                  }
+                                ]
+                              },
+                              {
+                                elementType: 'labels.text.fill',
+                                stylers: [{
+                                  color: '#ccdee9'
+                                }]
+                              }
+                            ];
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                              center: {
+                                lat: 28.3515, 
+                                lng:  76.9428
+                              },
+                              zoom: 9,
+                              styles: grayStyles,
+                              scrollwheel: false
+                            });
+                          }
+                        </script>
+                        <script
+                          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap">
+                        </script>
+                 28° 22' 33.0312", E 76° 55' 31.4868
+                      </div>
+                    <div class="col-md-6 col-xl-4">
+                        
+                        <div class="single-widget contact-widget" data-aos="fade-up" data-aos-delay="0">
+                            <h6 class="widget-tiltle">&nbsp;</h6>
+                            <div class="media">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Address</h6>
+                                    Ghaziabad,<br>
+                                    Melbourne, Victoria 3000 Australia
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fa fa-envelope-o"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Have any questions?</h6>
+                                   <p> <a href="mailto:shramik.co@gmail.com">shramik.co@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fa fa-phone"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Call us & Hire us</h6>
+                                    <a href="tel:+610791803458"> +61 (0) 7 9180 3458</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fa fa-fax"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Fax</h6>
+                                    <a href="fax:911889047521432">(91) 188904752 1432</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-md-6 col-xl-4">
+                        <div class="single-widget tags-widget" data-aos="fade-up" data-aos-delay="800">
+                            <h6 class="widget-tiltle">Popular Tags</h6>
+                            <a href="#">Logistics</a>
+                            <a href="#">Construction</a>
+                            <a href="#">Manufacturing</a>
+                            <a href="#">Agriculture</a>
+                            <a href="#">Automotiation</a>
+                        
+                        </div>
+                        <div class="single-widget subscribe-widget" data-aos="fade-up" data-aos-delay="800">
+                            <h6 class="widget-tiltle">Subscribe us</h6>
+                            <p>Sign up for our mailing list to get latest updates and offers</p>
+                            <form class="" method="get">
+                                <div class="input-group">
+                                    <input class="field form-control" name="subscribe" type="email"
+                                        placeholder="Email Address">
+                                    <span class="input-group-btn">
+                                        <button type="submit" name="submit-mail"><i class="fa fa-check"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                            <p>We respect your privacy</p>
+                            <ul class="nav social-nav">
+                                <li><a href="https://www.facebook.com/fh5co" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/shramik-co-8970321ab/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
            
-        </div>
-    </section>
-    <!-- feature part end -->
-  
-    <!-- subscribe part here -->
-    <section class="subscribe_part section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="subscribe_part_content">
-                        <h2>Get Your Orders and post notifcations</h2>
-                        <p>Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources for your product</p>
-                        <div class="subscribe_form">
-                            <input type="email" placeholder="Enter your mail">
-                            <a href="#" class="btn_1">Subscribe</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- subscribe part end -->
-
-    <!--::footer_part start::-->
-    <footer class="footer_part">
-        <div class="footer_iner">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-lg-8">
-                        <div class="footer_menu">
-                            <div class="footer_logo">
-                                <a href="index.html"><img src="img/footerlogo.jpeg" alt="#"></a>
-                            </div>
-                           
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-4">
-                        <div class="media contact-info">
-                          <span class="contact-info__icon"><i class="ti-home"></i></span>
-                          <div class="media-body">
-                            <h3> Manesar Gurugram</h3>
-                            <p> Plot number 185 sector 6</p>
-                          </div>
-                        </div>
-                        <div class="media contact-info">
-                          <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                          <div class="media-body">
-                            <a href="tel:+917982532954"> <h3>7982532954</h3>
-                            <p>Available 24x7</p></a>
-                          </div>
-                        </div>
-                        <div class="media contact-info">
-                          <span class="contact-info__icon"><i class="ti-email"></i></span>
-                          <div class="media-body">
-                            <a href="mailto:info@yourmail.com"><h3>lkindia@gmail.com</h3>
-                            <p>Send us your query anytime!</p></a>
-                          </div>
-                        </div>
-                       
-                        </div>
-                        <dic class="col-lg-10">
-                        <div class="social_icon">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                      </div>
-                    
-                        
-                       
-                    </div>
-                </div>
-            </div>
+</div>
         </div>
         
-        <div class="copyright_part">
+        <!-- Widgets End -->
+        <!-- Foot Note Start -->
+        <div class="foot-note">
             <div class="container">
-                <div class="row ">
-                    <div class="col-lg-10">
-                        <div class="copyright_text">
-                            <P><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  Terms & Conditions  |  Lk Enterprise  |
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></P>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--::footer_part end::-->
+                <div
+                    class="footer-content text-center text-lg-left d-lg-flex justify-content-between align-items-center">
+                    <img src="assets/images/1.png" alt="Shramik" style="width: 180px;height: 180px;"></a>
+                    <p class="mb-5" data-aos="fade-left" data-aos-offset="0"><a href="#">Terms Of Use</a><a
+                            href="#">Privacy & Security
+                            Statement</a></p>
+    
+</div>
+</div>
+</div>
 
-    <!-- jquery plugins here-->
-    <script src="js/jquery-1.12.1.min.js"></script>
-    <!-- popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- magnific popup js -->
-    <script src="js/jquery.magnific-popup.js"></script>
-    <!-- carousel js -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <!-- slick js -->
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <!-- custom js -->
-    <script src="js/custom.js"></script>
+<div class="darker">
+<div class="container" id="fh5co-legal">
+<div class="row">
+    <div class="col-sm-8 text-white mtext-center">
+        &copy; 2020 <a class="text-gr" href="#">Shramik <span class="navbar-brand2"> </span></a>. Design
+        by 
+    </div>
+    <div class="col-sm-4 text-white mtext-center">
+        <table>
+            <tr>
+                <td><a class="text-white" href="#!">Legal</a></td>
+                <td><a class="text-white" href="#!">Sitemap</a></td>
+                <td><a class="text-white" href="#!">Privacy Policy</a></td>
+
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+</div>
+
+        <!-- Foot Note End -->
+    </footer>
+    <!-- Footer Endt -->
+    <!--jQuery-->
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <!--Plugins-->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/loaders.css.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/lightgallery-all.min.js"></script>
+    <!--Template Script-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
