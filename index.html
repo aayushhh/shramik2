@@ -73,7 +73,25 @@
         function topFunction() {
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
-        }</script>
+        }
+        // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+        </script>
     <!-- Loader End -->
     <!-- Header Start -->
  
@@ -88,25 +106,20 @@
                
             </div>
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/4.png" alt="Logo" style="width: 180px; height: 50px;"></a>
-                <div class="contact">&NonBreakingSpace;
-                   &nbsp; <a href="tel:+1234567890" class="tel"><i class="fa fa-phone" aria-hidden="true"></i>+1234567890</a>
-                    <a href="mailto:shramik.co@gmail.com"><i class="fa fa-envelope"
-                            aria-hidden="true"></i>Shramik.co@gmail.com</a>
-                </div>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/4.png" alt="Logo" style="width: 250px; height: 60px;"></a>
+               
                 <div class="group d-flex align-items-center">
                     
                   
                 </div>
                 <a class="search-icon d-none d-md-block" href="#">
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#"><strong>Home</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Aboutus"><strong>About Us</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Services"><strong>Services</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Contactus"><strong>Contact Us</strong></a></li>
-                    </ul>
-                  
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html"><h4><strong>Home</strong></h4></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Aboutus"><h4><strong>About Us</h4></strong></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Services"><h4><strong>Services</h4></strong></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Contactus"><h4><strong>Contact Us</h4></strong></a></li>
+                        </ul>
                 </div>
             </nav>
         </div>
@@ -151,7 +164,7 @@
     <section class="services">
         <div class="container">
             <div class="title text-center">
-                <h6>Our Speakers</h6>
+                
                 <h1 class="title-blue">Why Choose Us</h1>
             </div>
             <div class="container">
@@ -204,23 +217,23 @@
                             <i class="fa fa-magic mr-4"></i>
                             <div class="media-body">
                                 <h5>Repowering Indian Labour</h5>
-                                By Providing organization
+                                By providing organization
                             </div>
                         </div>
                         <div class="media">
                             <i class="fa fa-magic mr-4"></i>
                             <div class="media-body">
                                 <h5>Repowering Industries</h5>
-                                By Increasing efficiency
-                            </div>
+                                By increasing efficiency
+                            </div>&nbsp;&nbsp;
                         </div>
                     </div>
                     <a href="ourstory.html" class="btn btn-primary">Our Story</a>
                 </div>
                 <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
                     <div class="featured-img">
-                        <img class="featured-big" src="assets/images/labour3.jpg" alt="Featured 1" style="height: 350px;width: 190;">
-                        <img class="featured-small" src="assets/images/labour2.jpg" alt="Featured 2" style="height: 230px;width: 230px;">
+                        <img class="featured-big" src="assets/images/labour3.jpg" alt="Featured 1" style="height: 380px;width: 190;background-position-x: right;">
+                        <img class="featured-small" src="assets/images/labour2.jpg" alt="Featured 2" style="height: 250px;width: 230px;">
                     </div>
                 </div>
             </div>
@@ -309,8 +322,8 @@
         <div class="footer-widgets">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-xl-4">
-                        <div id="map" style="height: 280px; width: 300px;"></div>
+                    <div class="col-md-3 col-xl-3">
+                        <div id="map" style="height: 280px; width: 300px; max-width:100%;max-height: auto;"></div>
                         <script>
                           function initMap() {
                             var uluru = {
@@ -350,7 +363,7 @@
                         </script>
                  28° 22' 33.0312", E 76° 55' 31.4868
                       </div>
-                    <div class="col-md-6 col-xl-4">
+                    <div class="col-md-6 col-xl-5">
                         
                         <div class="single-widget contact-widget" data-aos="fade-up" data-aos-delay="0">
                             <h6 class="widget-tiltle">&nbsp;</h6>
@@ -386,18 +399,18 @@
                         </div>
                     </div>
                   
-                    <div class="col-md-6 col-xl-4">
+                    <div class="col-md-5 col-xl-4">
                         <div class="single-widget tags-widget" data-aos="fade-up" data-aos-delay="800">
                             <h6 class="widget-tiltle">Popular Tags</h6>
                             <a href="#">Logistics</a>
                             <a href="#">Construction</a>
                             <a href="#">Manufacturing</a>
                             <a href="#">Agriculture</a>
-                            <a href="#">Automotiation</a>
+                            <a href="#">Automotiation</a><br>
                         
                         </div>
                         <div class="single-widget subscribe-widget" data-aos="fade-up" data-aos-delay="800">
-                            <h6 class="widget-tiltle">Subscribe us</h6>
+                            <h6 class="widget-tiltle"><br>Subscribe us</h6>
                             <p>Sign up for our mailing list to get latest updates and offers</p>
                             <form class="" method="get">
                                 <div class="input-group">
