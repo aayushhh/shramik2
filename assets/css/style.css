@@ -20,7 +20,7 @@
     1 - Header
 ------------------------------------*/
 header {
-  background-color: rgba(240, 136, 0, 0.883);
+  background-color: rgba(4, 134, 0, 0.911);
   position: sticky;
   color: rgba(201, 192, 192, 0.863);
   z-index: 1000;
@@ -132,6 +132,17 @@ header::after {
 .navbar-collapse .nav-link:hover {
   color: #ee6415;
 }
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
 
 .cart,
 .login-icon,
@@ -192,7 +203,7 @@ form button.btn-primary:hover {
 }
 
 .hero .slide-content h1 {
-  color: rgb(255, 123, 0);
+  color: rgba(4, 134, 0, 0.911);
   font-family: League -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Spartan League'
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.56);
   text-transform: lowercase;
@@ -333,7 +344,7 @@ form button.btn-primary:hover {
 }
 
 .title .title-blue {
-  color: #fd7200;
+  color: rgba(4, 134, 0, 0.911);
 }
 
 .title .title-primary {
@@ -353,7 +364,7 @@ form button.btn-primary:hover {
 }
 
 .services h5 {
-  color: #f06d01;
+  color: #184153;
   border-bottom: 2px solid #e7e7e7;
   padding-bottom: 5px;
   margin-bottom: 10px;
@@ -394,15 +405,20 @@ form button.btn-primary:hover {
 .featured-big {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 10;
+  max-width: 100%;
+  height: auto;
+
 }
 
 .featured-small {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 25px 25px 0 0;
+  padding: 15px 15px 0 0;
   background-color: #fff;
+  max-width: 100%;
+  height: 100%;
 }
 
 /*-----------------------------------
@@ -477,7 +493,7 @@ form button.btn-primary:hover {
 
 .post-content .post-btn:hover {
   color: #fff;
-  background-color: #ee1515;
+  background-color: #180404;
 }
 
 /*-----------------------------------
